@@ -21,6 +21,6 @@ This code snippet executes the following tasks:
 
 > :exclamation: It is important to note that the names of your form fields might differ. Ensure that the `$formObject` hashtable is appropriately adjusted to match your form fields. [See the Jira API documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-transitions-post)
 
-3. Create a new ticket using the: `Invoke-RestMethod` cmdlet. The hash table called: `$ticketUpdateBody` is passed to the body of the: `Invoke-RestMethod` cmdlet as a JSON object.
+3. Create a new ticket using the: `Invoke-RestMethod` cmdlet. The hash table called: `$formObject` is passed to the body of the: `Invoke-RestMethod` cmdlet as a JSON object.
 
 > To retrieve the transitionId, [see the Jira API documentation](https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issues/#api-rest-api-3-issue-issueidorkey-transitions-get)
